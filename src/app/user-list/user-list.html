@@ -1,0 +1,9 @@
+<h3>รายการผู้ใช้</h3>
+
+<ul>
+    <li *ngFor="let user of users">
+        {{ user.name }} 
+        
+        <span *ngIf="user.isActive" style="color: green; font-weight: bold;"> (Active)</span>
+    </li>
+</ul>
