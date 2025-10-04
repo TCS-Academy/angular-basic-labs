@@ -251,6 +251,14 @@
         <hr>
         <h3>Lab 3: Directives และ Pipes</h3>
         <app-user-list></app-user-list>
+         <hr>
+        <h3>Lab 4: Component Communication</h3>
+        
+        <h4>Parent Component (AppComponent)</h4>
+        <p>ข้อมูลสินค้าใน Parent: {{ product.name }}</p>
+        
+        <app-item-detail [itemData]="product"></app-item-detail>
+
 
         
     </div>

@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { Header } from "./header/header";
 import { FormsModule } from '@angular/forms';
 import { UserList } from './user-list/user-list';
+import { ItemDetail } from './item-detail/item-detail';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, FormsModule, UserList],
+  imports: [RouterOutlet, Header, FormsModule, UserList, ItemDetail],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -25,5 +26,8 @@ export class App {
   toggleDisable(): void {
     this.isDisabled = !this.isDisabled;
   }
-  
+  product = { 
+    name: 'Angular Training Course', 
+    price: 499.99 
+  }
 }

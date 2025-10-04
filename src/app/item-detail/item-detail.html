@@ -1,0 +1,5 @@
+<div *ngIf="itemData" style="border: 1px solid #ccc; padding: 10px; margin-top: 10px;">
+    <h4>รายละเอียดสินค้า (Child Component)</h4>
+    <p>ชื่อ: <strong>{{ itemData.name }}</strong></p>
+    <p>ราคา: <strong>{{ itemData.price | currency:'USD' }}</strong></p>
+</div>
