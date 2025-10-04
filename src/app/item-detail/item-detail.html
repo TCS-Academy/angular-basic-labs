@@ -2,4 +2,5 @@
     <h4>รายละเอียดสินค้า (Child Component)</h4>
     <p>ชื่อ: <strong>{{ itemData.name }}</strong></p>
     <p>ราคา: <strong>{{ itemData.price | currency:'USD' }}</strong></p>
+    <button (click)="buyItem()">ซื้อสินค้า</button> 
 </div>

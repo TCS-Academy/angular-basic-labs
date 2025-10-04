@@ -257,7 +257,8 @@
         <h4>Parent Component (AppComponent)</h4>
         <p>ข้อมูลสินค้าใน Parent: {{ product.name }}</p>
         
-        <app-item-detail [itemData]="product"></app-item-detail>
+        <app-item-detail [itemData]="product"  (buyEvent)="handlePurchase($event)"></app-item-detail>
+        <app-item-detail [itemData]="product2"  (buyEvent)="handlePurchase($event)"></app-item-detail>
 
 
         

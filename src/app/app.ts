@@ -30,4 +30,14 @@ export class App {
     name: 'Angular Training Course', 
     price: 499.99 
   }
+
+  product2 = { 
+    name: 'Java Training Course', 
+    price: 1099.99 
+  }
+  handlePurchase(itemName: string): void {
+    alert(`Parent ได้รับการแจ้งเตือน: สินค้า "${itemName}" ถูกซื้อแล้ว!`);
+  }
+
+
 }
