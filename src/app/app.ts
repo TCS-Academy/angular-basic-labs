@@ -5,10 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { UserList } from './user-list/user-list';
 import { ItemDetail } from './item-detail/item-detail';
 import { Logger } from './logger';
+import { CounterControl } from './counter-control/counter-control';
+import { CounterDisplay } from './counter-display/counter-display';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, FormsModule, UserList, ItemDetail],
+  imports: [RouterOutlet, Header, FormsModule, UserList, ItemDetail, CounterControl, CounterDisplay],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
