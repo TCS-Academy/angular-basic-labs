@@ -12,5 +12,5 @@ export class UserList {
     { name: 'Bob', isActive: true, joinedDate: new Date(2024, 5, 20) },
     { name: 'Charlie', isActive: false, joinedDate: new Date(2022, 11, 5) }
   ];
-
+   productPrice: number = 1234.567;
 }

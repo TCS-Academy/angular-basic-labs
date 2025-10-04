@@ -2,8 +2,15 @@
 
 <ul>
     <li *ngFor="let user of users">
-        {{ user.name }} 
+        {{ user.name | uppercase}} 
         
         <span *ngIf="user.isActive" style="color: green; font-weight: bold;"> (Active)</span>
+         - Joined: {{ user.joinedDate | date:'shortDate' }}
     </li>
 </ul>
+<hr>
+
+<h4>ตัวอย่างการใช้ Currency Pipe</h4>
+<p>ราคาสินค้า: {{ productPrice | currency }}</p>
+
+<p>ราคาสินค้า (THB): {{ productPrice | currency:'THB' }}</p>
