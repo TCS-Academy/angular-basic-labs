@@ -1,0 +1,17 @@
+<div style="border: 2px solid purple; padding: 20px;">
+    <h3>Template-Driven Registration Form</h3>
+
+    <form>
+        <div class="form-group">
+            <label for="username">ชื่อผู้ใช้:</label>
+            <input 
+                type="text" 
+                id="username" 
+                name="username" 
+                [(ngModel)]="username" 
+                placeholder="กรุณากรอกชื่อผู้ใช้">
+        </div>
+        
+        <p>ค่าชื่อผู้ใช้ที่พิมพ์: <strong>{{ username }}</strong></p>
+    </form>
+</div>

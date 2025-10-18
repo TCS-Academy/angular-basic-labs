@@ -9,10 +9,11 @@ import { CounterControl } from './counter-control/counter-control';
 import { CounterDisplay } from './counter-display/counter-display';
 import { HttpClientModule } from '@angular/common/http'; // 1.1 นำเข้า HttpClientModule
 import { PostList } from './post-list/post-list';
+import { RegistrationForm } from './registration-form/registration-form';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, FormsModule, UserList, ItemDetail, CounterControl, CounterDisplay, HttpClientModule, PostList], // 1.2 เพิ่ม HttpClientModule ใน imports
+  imports: [RouterOutlet, Header, FormsModule, UserList, ItemDetail, CounterControl, CounterDisplay, HttpClientModule, PostList, RegistrationForm], // 1.2 เพิ่ม HttpClientModule ใน imports
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
