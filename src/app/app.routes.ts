@@ -3,9 +3,11 @@ import {Home} from './home/home';
 import {About} from './about/about';
 import {RegistrationForm} from './registration-form/registration-form';
 import {Main} from './main/main';
+import { UserDetail } from './user-detail/user-detail';
 export const routes: Routes = [
   { path: '', component: Home },
   { path: 'about', component: About },
   { path: 'register', component: RegistrationForm },
-  { path: 'main', component: Main }
+  { path: 'main', component: Main },
+  { path: 'user/:id', component: UserDetail }
 ];
